@@ -7,7 +7,7 @@ function checkAllVocal(string) {
     else {
         var isVocal = false
         for (var i = 0; i < vocal.length; i++) {
-            if (string[0] === vocal[i]) {
+            if (string[0].toLowerCase() === vocal[i]) {
                 isVocal = true
             }
         }
@@ -22,4 +22,5 @@ function checkAllVocal(string) {
 
 console.log(checkAllVocal('aiuooeo'))
 console.log(checkAllVocal('oreo'))
-console.log(checkAllVocal('auoooo'))
+console.log(checkAllVocal('oDeo'))
+console.log(checkAllVocal('auOOOOOUAoooo'))
