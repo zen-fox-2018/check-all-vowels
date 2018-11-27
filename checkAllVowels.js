@@ -3,7 +3,7 @@ function checkVowel(str) {
   for(var i = 0; i < str.length; i++){
     var isCheck = false;
     for(var j = 0; j < vocal.length; j++){
-      if(str[i] === vocal[j]){
+      if(str[i].toLowerCase() === vocal[j]){
         isCheck = true;
       }
     }
